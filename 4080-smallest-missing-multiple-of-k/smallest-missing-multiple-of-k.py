@@ -1,12 +1,15 @@
 class Solution(object):
     def missingMultiple(self, nums, k):
-        i=1
-        while True:
-            if k*i not in nums:
-                return(k*i)
-                break
+        i=True
+        n=1
+        while i is True:
+            if k*n in nums:
+                n+=1
             else:
-                i+=1
+                return(k*n)
+                i=False
+
+
 
 
 
