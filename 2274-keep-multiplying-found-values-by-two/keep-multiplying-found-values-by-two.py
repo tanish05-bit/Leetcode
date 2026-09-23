@@ -1,6 +1,7 @@
 class Solution(object):
     def findFinalValue(self, nums, original):
-        while original in set(nums):
+        a=set(nums)
+        while original in a:
             original *=2
         return (original)
 
