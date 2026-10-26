@@ -11,4 +11,4 @@ sum(if(month='Sep',revenue,null)) as Sep_Revenue,
 sum(if(month='Oct',revenue,null)) as Oct_Revenue,
 sum(if(month='Nov',revenue,null)) as Nov_Revenue,
 sum(if(month='Dec',revenue,null)) as Dec_Revenue
-from Department group by id;
+from Department group by id order by id;
